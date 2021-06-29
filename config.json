@@ -1,0 +1,9 @@
+{
+  "PORT": "3001",
+  "JWT_SECRET": "theMostSecretInformationEver",
+  "mongoUrl": "mongodb://192.168.99.100:27017/users",
+  "gmail": {
+    "user": "testingmail@gmail.com",
+    "pass": "password"
+  }  
+}

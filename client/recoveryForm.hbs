@@ -1,0 +1,17 @@
+<form action="/recovery" method="POST" class="pt-5">
+  <h2>Форма для восстановления номера</h2>
+  <div class="mb-3">
+    {{#if nonExistentEmail}}
+      <div class="alert alert-danger" role="alert">
+        Такого эмейла нет в нашей базе
+      </div>
+    {{/if}}
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control custom_input">
+    <div id="emailHelp" class="form-text">Восстановленный номер будет направлен на почту</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<div class="pt-3">
+  <a href="/" class="btn btn-warning">Вернуться назад</a>
+</div>
